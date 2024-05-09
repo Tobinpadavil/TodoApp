@@ -1,0 +1,73 @@
+#outline {
+    text-align: center;
+    height: 500px;
+    width: 400px;
+    margin: 0;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 80px; 
+    margin-left: 40%;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: #39FF14;
+    text-align: center;
+}
+
+input {
+    margin-top: 20px;
+    border-radius: 15px;
+    height: 40px;
+    width: 180px;
+    padding: 5px 25px;
+    border: solid;
+    border-color: #39FF14 3px;
+    color: #39FF14;
+    background-color: rgb(57, 56, 56);
+}
+
+::placeholder {
+    color: whitesmoke;
+    font-weight: bold;
+    opacity: 0.5; /* Firefox */
+  }
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: whitesmoke;
+    font-weight: bold;
+  }
+  
+
+.name1 {
+    margin-top: 63px;
+    margin-bottom: 40px;
+}
+
+.name2 {
+    margin-bottom: 40px;
+}
+
+.btn {
+    margin-top: 35px;
+    padding: 12px 22px;
+    background-color: #39FF14;
+    color: whitesmoke;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login {
+    margin-top: 100px;
+    text-align: center;
+
+}
+
+label {
+    margin-right: 10px;
+}
