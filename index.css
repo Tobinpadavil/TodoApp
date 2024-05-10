@@ -1,4 +1,4 @@
-\.navbar {
+.navbar {
     display: flex;
     margin-bottom: 20px;
     justify-content: space-between;
@@ -92,7 +92,7 @@ body {
     font-size: 40px;
 }
 
-@media ( max-width: 600px) {
+@media ( max-width: 500px) {
     .main-text {
         margin-top: 50px;
         font-size: 40px;
