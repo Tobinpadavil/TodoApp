@@ -2,19 +2,18 @@ body {
     color: whitesmoke;
     background-color: #040720;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 .navbar {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-wrap: wrap;
+    margin-bottom: 20px;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
     padding: 10px 20px;
     background-color: #040720;
     color: #39FF14;
-    margin: 20px 0;
 }
 
 .nav-left, .nav-right {
@@ -31,23 +30,34 @@ body {
     border-radius: 10px;
     cursor: pointer;
     margin-left: 17px;
+    margin-right: 40px;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
 .nav-text {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 17px;
+    margin: 0px 17px 20px 40px;
+}
+
+.nav-text-image {
+    margin-right: 5px;
+    height: 80px;
+    transform: rotate(2deg);
 }
 
 .nav-logo {
     height: 80px; /* Adjusted for better responsiveness */
-    margin: 0 10px;
+    margin-left: 10px; /* Adjusted for better responsiveness */
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
 .content {
     text-align: center;
-    padding: 20px;
+    padding: 20px; /* Added padding for better spacing on mobile */
 }
 
 .main-text {
@@ -78,42 +88,21 @@ body {
     cursor: pointer;
 }
 
+.Tasker {
+    font-weight: bolder;
+}
+ 
 .nav-title {
     color: #39FF14;
     font-size: 30px; /* Adjusted font size for better responsiveness */
 }
 
-/* Media queries for small screens */
-@media (max-width: 599px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-left, .nav-right {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-logo {
-        height: 60px; /* Further adjustment for very small screens */
-        margin: 0;
-    }
-
-    .nav-title {
-        font-size: 24px; /* Further adjustment for very small screens */
-        text-align: center;
-    }
-
-    .nav-button, .nav-text {
-        margin: 10px 0; /* Adjust margins for better spacing */
-    }
-
+@media (max-width: 600px) {
     .main-text {
-        font-size: 40px; /* Further adjustment for very small screens */
+        font-size: 30px;
     }
 
     .sub-text {
-        font-size: 18px; /* Further adjustment for very small screens */
+        font-size: 15px;
     }
 }
