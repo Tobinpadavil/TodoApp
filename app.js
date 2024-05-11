@@ -38,6 +38,7 @@ function render() {
         }
         const checkbox = document.createElement('input');
         checkbox.type = "checkbox";
+        checkbox.className = "checkbox"
         checkbox.checked = lead.completed;
         checkbox.addEventListener('change', () => {
             toggleComplete(index);
