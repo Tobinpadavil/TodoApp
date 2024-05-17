@@ -27,6 +27,16 @@ input {
     background-color: rgb(57, 56, 56);
 }
 
+h1::selection {
+    background-color: #040720;
+    color: #39FF14;
+}
+
+input::selection {
+    background-color: #040720;
+    color: #39FF14;
+}
+
 ::placeholder {
     color: whitesmoke;
     font-weight: bold;
@@ -58,12 +68,6 @@ input {
     cursor: pointer;
     font-weight: bold;
     text-align: center;
-}
-
-.login {
-    margin-top: 100px;
-    text-align: center;
-
 }
 
 label {
