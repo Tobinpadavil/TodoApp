@@ -10,7 +10,7 @@
 <body>
     <form onsubmit="return login()"> 
         <div id="outline">
-            <h1 class="login"><span>Login</span></h1>
+            <h1 class="login">Login</h1>
             <div>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -29,15 +29,29 @@
         function login() {
             let name = document.getElementById("name").value;
             let email = document.getElementById("email").value;
-
+    
             if (name === "" || email === "") {
                 alert("Both fields are required!");
                 return false;
             } else {
+                // Save user details in localStorage
+                localStorage.setItem('username', name);
+                localStorage.setItem('useremail', email);
+    
                 window.location.href = "app.html";
                 return false; // Prevent form submission
             }
         }
+    
+        // Check if user is already logged in
+        window.onload = function() {
+            if (localStorage.getItem('username') && localStorage.getItem('useremail')) {
+                window.location.href = "app.html";
+            }
+        }
     </script>
+    
+
+
 </body>
 </html>
